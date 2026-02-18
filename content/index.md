@@ -4,45 +4,14 @@ seo:
   description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
+::u-page-hero
 ---
+class: dark:bg-gradient-to-b from-neutral-900 to-neutral-950
 orientation: horizontal
 ---
-#top
-:hero-background
-
-#title
-Ship Beautiful [Documentation]{.text-primary}.
-
-#description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
-
-#links
-  :::u-button
-  ---
-  to: /getting-started
-  size: xl
-  trailing-icon: i-lucide-arrow-right
-  ---
-  Get started
-  :::
-
-  :::u-button
-  ---
-  icon: i-simple-icons-github
-  color: neutral
-  variant: outline
-  size: xl
-  to: https://github.com/nuxt-ui-templates/docs
-  target: _blank
-  ---
-  Use this template
-  :::
-
-#default
   :::prose-pre
   ---
-  code: |
+  code: |-
     export default defineNuxtConfig({
       modules: [
         '@nuxt/ui',
@@ -55,7 +24,6 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
     })
   filename: nuxt.config.ts
   ---
-
   ```ts [nuxt.config.ts]
   export default defineNuxtConfig({
     modules: [
@@ -69,9 +37,40 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
   })
   ```
   :::
+
+#top
+:hero-background
+
+#title
+เว็บไซต์
+
+#links
+  :::u-button
+  ---
+  size: xl
+  to: /getting-started
+  trailing-icon: i-lucide-arrow-right
+  ---
+  Get started
+  :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: i-simple-icons-github
+  size: xl
+  target: _blank
+  to: https://github.com/nuxt-ui-templates/docs
+  variant: outline
+  ---
+  Use this template
+  :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Powered by Nuxt UI components
 
@@ -156,7 +155,10 @@ Powered by Nuxt UI components
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Enhanced with Nuxt Content
 
@@ -241,23 +243,23 @@ Enhanced with Nuxt Content
   :::
 ::
 
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
+::u-page-section{.dark:bg-gradient-to-b.from-neutral-950.to-neutral-900}
   :::u-page-c-t-a
   ---
   links:
     - label: Start building
-      to: '/getting-started'
+      to: /getting-started
       trailingIcon: i-lucide-arrow-right
     - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
+      to: https://github.com/nuxt-ui-templates/docs
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   class: dark:bg-neutral-950
+  description: Join thousands of developers building with Nuxt and Nuxt UI. Get
+    this template and start shipping today.
+  title: Ready to build an amazing documentation?
   ---
-
   :stars-bg
   :::
 ::

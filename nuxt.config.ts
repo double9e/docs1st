@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-og-image',
     'nuxt-llms',
-    '@nuxtjs/mcp-toolkit'
+    '@nuxtjs/mcp-toolkit',
+    'nuxt-studio'
   ],
 
   devtools: {
@@ -83,5 +84,15 @@ export default defineNuxtConfig({
 
   mcp: {
     name: 'Docs template'
+  },
+
+  studio: {
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'double9e',
+      repo: 'your-repo',
+      branch: 'main'
+    }
   }
+
 })
